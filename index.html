@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Научно-популярный портал о бальнеологии, минеральных водах и природных лечебных факторах. Без продаж — только знания.">
+  <title>БальнеоГид — Наука о природном оздоровлении</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header class="header" role="banner">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo" aria-label="БальнеоГид — главная">
+        Бальнео<span class="logo__accent">Гид</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a href="#">О бальнеологии</a>
+        <a href="#">Природные факторы</a>
+        <a href="#">Минеральные воды</a>
+        <a href="#">Наука</a>
+        <a href="#">Климатотерапия</a>
+      </nav>
+
+      <div class="header__actions">
+        <label class="search-box" aria-label="Поиск">
+          <svg width="15" height="15" fill="none" stroke="#9CA3AF" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="search" placeholder="Найти материал...">
+        </label>
+        <a href="#start" class="btn-start">
+          С чего начать
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <a href="#">О бальнеологии</a>
+  <a href="#">Природные факторы</a>
+  <a href="#">Минеральные воды</a>
+  <a href="#">Наука</a>
+  <a href="#">Климатотерапия</a>
+  <a href="#start" class="mobile-nav__cta">С чего начать →</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" aria-label="Баннер">
+  <!-- decorative orbs -->
+  <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+  <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+  <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+  <!-- ripple rings -->
+  <div class="hero__ripple hero__ripple--1" aria-hidden="true"></div>
+  <div class="hero__ripple hero__ripple--2" aria-hidden="true"></div>
+  <div class="hero__ripple hero__ripple--3" aria-hidden="true"></div>
+  <!-- particle drops -->
+  <div id="heroDrops" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <div class="hero__badge">
+      <span class="hero__badge-dot"></span>
+      Научно-популярный портал
+    </div>
+
+    <h1 class="hero__h1">
+      Природа исцеляет.<br>
+      <em>Наука объясняет.</em>
+    </h1>
+
+    <p class="hero__sub">
+      Всё о бальнеологии, минеральных водах и природных лечебных факторах —
+      доступно, точно и с опорой на исследования.
+    </p>
+
+    <div class="hero__ctas">
+      <a href="#start" class="btn-hero-primary">
+        С чего начать
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#topics" class="btn-hero-ghost">Все разделы</a>
+    </div>
+
+    <div class="hero__stats" aria-label="Статистика портала">
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-count="8" data-suffix="">0</span>
+        <span class="hero__stat-label">разделов</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-count="120" data-suffix="+">0</span>
+        <span class="hero__stat-label">материалов</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-count="15" data-suffix="">0</span>
+        <span class="hero__stat-label">экспертов</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,35 C180,70 360,0 540,35 C720,70 900,10 1080,35 C1260,60 1360,20 1440,35 L1440,70 L0,70 Z" fill="#FDFAF7"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ==================== TOPICS ==================== -->
+<section class="section" id="topics" aria-labelledby="topics-title">
+  <div class="container">
+    <div class="section__hdr reveal">
+      <div>
+        <h2 class="section__title" id="topics-title">Разделы портала</h2>
+        <p class="section__sub">Всё о природных методах оздоровления в одном месте</p>
+      </div>
+      <a href="#" class="link-all">Все разделы <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="topics__grid">
+      <a href="#" class="topic-card reveal reveal-d1">
+        <div class="topic-card__icon" style="background:linear-gradient(135deg,#C8E9F2,#A0D4E4)">💧</div>
+        <span class="topic-card__name">О бальнеологии</span>
+        <p class="topic-card__desc">Что это такое, принципы, безопасность и противопоказания</p>
+        <span class="topic-card__count">12 материалов</span>
+      </a>
+      <a href="#" class="topic-card reveal reveal-d2">
+        <div class="topic-card__icon" style="background:linear-gradient(135deg,#C8E8D4,#9ED0B4)">🌿</div>
+        <span class="topic-card__name">Природные факторы</span>
+        <p class="topic-card__desc">Воды, грязи, климат, ландшафт, термальные факторы</p>
+        <span class="topic-card__count">24 материала</span>
+      </a>
+      <a href="#" class="topic-card reveal reveal-d3">
+        <div class="topic-card__icon" style="background:linear-gradient(135deg,#FDEBC8,#F8CF88)">🏔️</div>
+        <span class="topic-card__name">Климатотерапия</span>
+        <p class="topic-card__desc">Типы лечебного климата и виды климатотерапии</p>
+        <span class="topic-card__count">8 материалов</span>
+      </a>
+      <a href="#" class="topic-card reveal reveal-d4">
+        <div class="topic-card__icon" style="background:linear-gradient(135deg,#DDD5F8,#C0B0F0)">🌊</div>
+        <span class="topic-card__name">Талассотерапия</span>
+        <p class="topic-card__desc">Морские факторы: вода, водоросли, климат, грязи</p>
+        <span class="topic-card__count">6 материалов</span>
+      </a>
+      <a href="#" class="topic-card reveal reveal-d5">
+        <div class="topic-card__icon" style="background:linear-gradient(135deg,#FBD5D0,#F4AFA6)">🔬</div>
+        <span class="topic-card__name">Наука и исследования</span>
+        <p class="topic-card__desc">Доказательная база методов и клинические данные</p>
+        <span class="topic-card__count">15 материалов</span>
+      </a>
+      <a href="#" class="topic-card reveal reveal-d1">
+        <div class="topic-card__icon" style="background:linear-gradient(135deg,#C8E9F2,#A0D4E4)">📖</div>
+        <span class="topic-card__name">Гид по минводам</span>
+        <p class="topic-card__desc">Типы, минерализация, ионный состав, pH воды</p>
+        <span class="topic-card__count">10 материалов</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ARTICLES ==================== -->
+<section class="section section--alt" aria-labelledby="articles-title">
+  <div class="container">
+    <div class="section__hdr reveal">
+      <div>
+        <h2 class="section__title" id="articles-title">Читать сейчас</h2>
+        <p class="section__sub">Актуальные материалы для начинающих и любознательных</p>
+      </div>
+      <a href="#" class="link-all">Все материалы <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="articles__grid">
+      <a href="article.html" class="art-card reveal">
+        <div class="art-card__cover" style="background: linear-gradient(140deg, #0C5C6B 0%, #0E8A82 60%, #1A9A78 100%);">
+          <span class="art-card__cover-icon" aria-hidden="true">💧</span>
+        </div>
+        <div class="art-card__body">
+          <span class="art-card__cat">💧 Пищеварительная система</span>
+          <h3 class="art-card__title">Как минеральная вода влияет на ЖКТ</h3>
+          <p class="art-card__excerpt">Разбираем механизм действия минеральных вод на пищеварительную систему с опорой на клинические исследования. Хлоридные, гидрокарбонатные и сульфатные воды — в чём разница для вашего желудка.</p>
+          <div class="art-card__meta">
+            <span>⏱ 8 мин</span>
+            <span>🔬 Научно-популярная</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="article2.html" class="art-card reveal reveal-d1">
+        <div class="art-card__cover" style="background: linear-gradient(140deg, #7D2040 0%, #B04A6A 60%, #C86A80 100%);">
+          <span class="art-card__cover-icon" aria-hidden="true">🫀</span>
+        </div>
+        <div class="art-card__body">
+          <span class="art-card__cat">🫀 Сердечно-сосудистая система</span>
+          <h3 class="art-card__title">Магний в воде и сердце: что говорит наука</h3>
+          <p class="art-card__excerpt">Почему магний — не маркетинг, а физиология. Доказательная база и практические выводы для тех, кто выбирает воду осознанно.</p>
+          <div class="art-card__meta">
+            <span>⏱ 6 мин</span>
+            <span>🔬 Научно-популярная</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="article3.html" class="art-card reveal reveal-d2">
+        <div class="art-card__cover" style="background: linear-gradient(140deg, #6B4A0A 0%, #A07020 60%, #C49030 100%);">
+          <span class="art-card__cover-icon" aria-hidden="true">🔍</span>
+        </div>
+        <div class="art-card__body">
+          <span class="art-card__cat">❓ Развенчиваем мифы</span>
+          <h3 class="art-card__title">5 мифов о лечебных водах, в которые все верят</h3>
+          <p class="art-card__excerpt">Что на самом деле означает «целебная вода» и почему не всё написанное на этикетке правда.</p>
+          <div class="art-card__meta">
+            <span>⏱ 5 мин</span>
+            <span>📋 Обзорный материал</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ENCYCLOPEDIA ==================== -->
+<section class="section" aria-labelledby="enc-title">
+  <div class="container">
+    <div class="section__hdr reveal">
+      <div>
+        <h2 class="section__title" id="enc-title">Энциклопедия</h2>
+        <p class="section__sub">Термины и понятия с точными научными определениями</p>
+      </div>
+      <a href="#" class="link-all">Все статьи <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="enc__grid">
+      <a href="#" class="enc-card reveal">
+        <span class="enc-card__icon" aria-hidden="true">🌡️</span>
+        <div>
+          <div class="enc-card__title">Бальнеология</div>
+          <div class="enc-card__def">Раздел медицины и курортологии, изучающий лечебные свойства природных факторов — минеральных вод, лечебных грязей, климата — и их применение для профилактики и лечения.</div>
+        </div>
+      </a>
+      <a href="#" class="enc-card reveal reveal-d1">
+        <span class="enc-card__icon" aria-hidden="true">⚗️</span>
+        <div>
+          <div class="enc-card__title">Минерализация воды</div>
+          <div class="enc-card__def">Суммарное содержание растворённых неорганических веществ в воде, выраженное в граммах на литр (г/л). Ключевой показатель для классификации минеральных вод.</div>
+        </div>
+      </a>
+      <a href="#" class="enc-card reveal reveal-d2">
+        <span class="enc-card__icon" aria-hidden="true">🟤</span>
+        <div>
+          <div class="enc-card__title">Лечебные грязи (пелоиды)</div>
+          <div class="enc-card__def">Природные образования органического и неорганического происхождения, применяемые в виде аппликаций при болезнях опорно-двигательной, нервной и других систем.</div>
+        </div>
+      </a>
+      <a href="#" class="enc-card reveal reveal-d3">
+        <span class="enc-card__icon" aria-hidden="true">🌤️</span>
+        <div>
+          <div class="enc-card__title">Климатотерапия</div>
+          <div class="enc-card__def">Использование природных климатических факторов — атмосферного воздуха, солнечного излучения, ионизации атмосферы — в лечебных и профилактических целях.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA ==================== -->
+<section class="section section--alt" id="start">
+  <div class="container">
+    <div class="cta-block reveal">
+      <div class="cta-block__inner">
+        <div class="cta-block__icon" aria-hidden="true">🧭</div>
+        <h2 class="cta-block__title">Не знаете с чего начать?</h2>
+        <p class="cta-block__sub">
+          Ответьте на несколько вопросов — подберём подходящий раздел<br>
+          и материалы именно для вас
+        </p>
+        <a href="#" class="btn-cta">
+          Найти свой метод
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="footer__brand-logo">
+          Бальнео<span>Гид</span>
+        </a>
+        <p class="footer__desc">
+          Научно-популярный портал о бальнеологии и природных лечебных факторах. Без продаж — только знания.
+        </p>
+        <span class="footer__editorial">📋 Редакционный контент</span>
+      </div>
+      <div class="footer__col">
+        <h4>Разделы</h4>
+        <a href="#">О бальнеологии</a>
+        <a href="#">Природные факторы</a>
+        <a href="#">Минеральные воды</a>
+        <a href="#">Климатотерапия</a>
+        <a href="#">Талассотерапия</a>
+      </div>
+      <div class="footer__col">
+        <h4>Материалы</h4>
+        <a href="#">Статьи</a>
+        <a href="#">Энциклопедия</a>
+        <a href="#">Наука</a>
+        <a href="#">Гиды</a>
+        <a href="#">Обзоры</a>
+      </div>
+      <div class="footer__col">
+        <h4>О проекте</h4>
+        <a href="#">Миссия</a>
+        <a href="#">Эксперты</a>
+        <a href="#">Команда</a>
+        <a href="#">Редакционная политика</a>
+        <a href="#">Контакты</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 БальнеоГид. Все права защищены.</span>
+      <div class="footer__bottom-links">
+        <a href="#">Конфиденциальность</a>
+        <a href="#">Cookie</a>
+        <a href="#">Карта сайта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
